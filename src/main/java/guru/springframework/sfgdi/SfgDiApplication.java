@@ -1,5 +1,6 @@
 package guru.springframework.sfgdi;
 
+import guru.springframework.sfgdi.beans.FakeDataSource;
 import guru.springframework.sfgdi.controller.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -30,6 +31,13 @@ public class SfgDiApplication {
         System.out.println("--- Profiles");
         var i18nController = (I18nController) ctx.getBean("i18nController");
         System.out.println("i18nController.stayGreeting() = " + i18nController.sayGreetings());
+
+
+        var fakeDataSource = ctx.getBean(FakeDataSource.class);
+        System.out.println("fakeDataSource.getUsername() = " + fakeDataSource.getUsername());
+        System.out.println("fakeDataSource.getPassword() = " + fakeDataSource.getPassword());
+        System.out.println("fakeDataSource.getUrl() = " + fakeDataSource.getUrl());
+
     }
 
 }
