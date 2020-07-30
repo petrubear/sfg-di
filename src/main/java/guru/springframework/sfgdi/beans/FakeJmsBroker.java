@@ -4,6 +4,7 @@ public class FakeJmsBroker {
     private String username;
     private String password;
     private String url;
+    private String failover;
 
     public String getUsername() {
         return username;
@@ -27,5 +28,13 @@ public class FakeJmsBroker {
 
     public void setUrl(String url) {
         this.url = url;
+    }
+
+    public String getFailover() {
+        return failover;
+    }
+
+    public void setFailover(String failover) {
+        this.failover = failover;
     }
 }

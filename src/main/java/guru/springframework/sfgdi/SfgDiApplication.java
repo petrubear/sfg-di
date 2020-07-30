@@ -44,8 +44,7 @@ public class SfgDiApplication {
         System.out.println("fakeJmBroker.getUsername() = " + fakeJmsBroker.getUsername());
         System.out.println("fakeJmBroker.getPassword() = " + fakeJmsBroker.getPassword());
         System.out.println("fakeJmBroker.getUrl() = " + fakeJmsBroker.getUrl());
-
-
+        System.out.println("fakeJmsBroker.getFailover() = " + fakeJmsBroker.getFailover());
     }
 
 }
